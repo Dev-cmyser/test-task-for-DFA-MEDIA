@@ -7,4 +7,5 @@ i use poetry here but i made a requirements.tst for you if it need
 # git clone https://github.com/Dev-cmyser/test-task-for-DFA-MEDIA.git
 
 cd test-task-for-DFA-MEDIA
-
+# activating virtual env
+# python3 main.py
