@@ -21,14 +21,13 @@ def add_data_to_db(data):
         for item in [fact, forecast]:
             db.add(item)  
         db.commit() 
-        print(company.id, fact.id, forecast.id)
         
         # fact Qliq
         qliq_fact = Qliq(data_1=arr[0], data_2=arr[1], fact_id=fact.id)
-        qoil_fact = Qoil(data_1=arr[0], data_2=arr[1], fact_id=fact.id)
+        qoil_fact = Qoil(data_1=arr[2], data_2=arr[3], fact_id=fact.id)
 
-        qliq_forecast = Qliq(data_1=arr[0], data_2=arr[1], forecast_id=forecast.id)
-        qoil_forecast = Qoil(data_1=arr[0], data_2=arr[1], forecast_id=forecast.id)
+        qliq_forecast = Qliq(data_1=arr[4], data_2=arr[5], forecast_id=forecast.id)
+        qoil_forecast = Qoil(data_1=arr[6], data_2=arr[7], forecast_id=forecast.id)
 
         for item in [qliq_fact, qoil_fact, qliq_forecast, qoil_forecast]:
             db.add(item)  

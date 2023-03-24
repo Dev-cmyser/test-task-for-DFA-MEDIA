@@ -11,6 +11,7 @@ def main():
 
     csv_gen = parse_exel()
     for data in csv_gen:
+        print(f"Добавляю следущую запись: {data}")
         add_data_to_db(data)
 
 
